@@ -1,0 +1,201 @@
+///HTML///
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>Sports Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class = "background">
+  <header class="header">
+    <h1>Sports Central Hub</h1>
+  </header>
+
+  <nav class="navbar text-center">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
+      <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+<h1 class="hr1 align">Get All Sports News</h1>
+<p class="head-para align">This platform Will Help you to get the news of the sports across the world.</p>
+<div class="align">
+<button class="btn btn-success" onclick="display('sectionhome')">Read Now</button>
+</div>
+  <section id="home" class="section">
+    <p class="head">Welcome to Sports Central! Your one-stop destination for all sports news, events, and athlete profiles.</p>
+    <p class="para">Home page of the sports central hub From here itself you can navigate through into it</p>
+  </section>
+  <section id="news" class="section">
+    <h2 class="head">Latest News</h2>
+  <p class="para">As an odd-numbered year, 2025 is both a non-Olympic Games and non-World Cup year for any sport. Women's sport takes centre stage in the 2025 sporting calendar with major tournaments in rugby union and cricket. The most prominent quadrennial events for this year are the 2025 Women's Rugby World Cup in England and the 2025 Women's Cricket World Cup in India.</p>
+  <p class="para">In men's sport, the expanded 2025 FIFA Club World Cup will have its first edition in its new quadrennial format, mirroring other FIFA World Cups, with the former annual format being rebranded as the FIFA Intercontinental Cup.</p>  
+  <p class="para">In multi-sports, the 2025 World Games for non-Olympic disciplines and events will take place in Chengdu, China while the 2025 Deaflympics, the premier event for the non-Paralympic disability sport classification of hearing impairment will also take place in Tokyo, Japan.</p>
+  <p>Stay updated with the latest sports news and articles.</p>
+  </section>
+  <section id="events" class="section">
+    <h2 class="head">Upcoming Events</h2>
+   <p class="para">The ICC Champions Trophy is a quadrennial ODI cricket tournament organised by the International Cricket Council (ICC).it was rebranded as ICC Champions Trophy in 2002 and has been held as a quadrennial tournament since 2009. In 2016, the ICC cancelled future editions of the Champions Trophy after the 2017 tournament, aiming to have only one major tournament in each format of international cricket.However in November 2021 as part of the 2024-2031 ICC men's hosts cycle, ICC announced that the tournament would return from 2025 onwards.</p>
+    <p>Don't miss out on the exciting upcoming sports events.</p>
+  </section>
+  <footer class="footer">
+    <p> 2025 Sports Central. All rights reserved.</p>
+  </footer>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+///CSS///
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .navbar {
+    top: 0;
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ff6347;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+ 
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+  
+.background{
+background-image: url("https://res.cloudinary.com/dqcwknncd/image/upload/v1737283321/football-composition-with-copyspace_abbbtf.jpg");
+background-size: cover;
+height:200vh;
+width:100vw;
+}
+
+.para{
+font-family: roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 699px;
+
+}
+
+.head{
+font-family: bree serif;
+font-size: 30px;
+color:coral;
+font-weight: bolder;
+}
+
+.i-style{
+font-size: 35px;
+border-radius: 45px;
+background-color: #444;
+padding:10px;
+}
+
+.haed-para{
+font-family: roboto;
+font-size: 25px;
+font-weight: 700px;
+color:darkgreen;
+margin-left: 20px;
+}
+
+.hr1{
+font-family: roboto;
+font-size: 30px;
+font-weight: bolder;
+color:rgb(27, 106, 143);
+margin-left: 20px;
+}
+
+.align{
+text-align: center;
+} 
+
+///JS///
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        link.style.color = '#ff6347';
+      });
+  
+      link.addEventListener('mouseout', () => {
+        link.style.color = '#fff';
+      });
+    });
+  });
+  
